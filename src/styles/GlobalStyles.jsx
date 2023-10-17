@@ -1,4 +1,4 @@
-const { createGlobalStyle } = require('styled-components');
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 /* ============= GLOBAL CSS =============== */
@@ -287,41 +287,7 @@ PROJECT CSS
 body {
   background: var(--grey-200);
 }
-.hero {
-  min-height: 40vh;
-  background: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem;
-}
-.img-container {
-  display: none;
-}
-.hero-center {
-  width: 90vw;
-  max-width: var(--max-width);
-}
-.hero-title h1 {
-  margin-bottom: 2rem;
-  font-weight: 700;
-}
-.hero-title p {
-  line-height: 2;
-  max-width: 35em;
-  color: var(--grey-600);
-}
-@media (min-width: 992px) {
-  .hero-center {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    place-items: center;
-    gap: 4rem;
-  }
-  .img-container {
-    display: block;
-  }
-}
+
 /* 
 ============= 
 PROJECTS 
